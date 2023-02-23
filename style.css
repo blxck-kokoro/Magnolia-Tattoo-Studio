@@ -80,7 +80,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-  background-color: grey;
+  background-color: rgb(55, 55, 55);
 }
 
 header img {
