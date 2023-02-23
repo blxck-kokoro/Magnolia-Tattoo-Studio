@@ -93,7 +93,7 @@ header img {
 .about-us .about-us-section {
   width: 80vw;
   height: 400px;
-  margin: 0 auto;
+  margin: 3rem auto;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5em;
@@ -125,6 +125,7 @@ header img {
   color: white;
   padding-top: 0.5em;
   box-shadow: 0px -10px 20px rgb(5, 5, 24);
+  margin-top: 10rem;
 }
 
 .locations-field {
@@ -155,15 +156,40 @@ header img {
 
 .artists {
   width: 100%;
-  height: 800px;
   color: black;
   padding-top: 0.5em;
-  box-shadow: 0px -10px 20px rgb(5, 5, 24);
-  border: 2px solid red;
 }
 
-.artists-field {
-  width: inherit;
-  height: 650px;
-  border: 2px solid rgb(255, 136, 0);
+.artist-odd, .artist-even {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 5rem;
+}
+
+.artist-portrait {
+  height: 600px;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 5rem;
+}
+
+.artist-odd .artist-portrait {
+  grid-column: 2 / 4;
+
+}
+.artist-odd .artist-description {
+  grid-column:  5 / 7;
+}
+
+.artist-description p {
+  font-size: 32px;
+  text-align: justify;
+}
+
+.artist-even .artist-description {
+  grid-column: 2 / 4;
+} 
+
+.artist-even .artist-portrait {
+  grid-column: 5 / 7;
 }
