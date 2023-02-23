@@ -1,0 +1,169 @@
+body {
+  background-color: rgb(250, 250, 231);
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(5, 5, 24);
+  box-shadow: 0px 10px 20px rgb(5, 5, 24);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+nav .logo {
+  height: 80px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 36px;
+}
+
+nav .logo a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+nav .logo a:hover {
+  color: grey;
+}
+
+nav ul {
+  height: 80px;
+  width: 1000px;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul a {
+  height: inherit;
+  width: 160px;
+  list-style-type: none;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+nav ul a:hover {
+  background-color: grey;
+}
+
+header img {
+  height: 90vh;
+  width: 100%;
+  box-shadow: 0px 10px 20px rgb(5, 5, 24);
+  margin-bottom: 0;
+}
+
+.about-us .about-us-section {
+  width: 80vw;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.about-us h1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.about-us .about-us-section div {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.about-us .about-us-section div p {
+  font-family: Cambria;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+}
+
+.locations {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(5, 5, 24);
+  color: white;
+  padding-top: 0.5em;
+  box-shadow: 0px -10px 20px rgb(5, 5, 24);
+}
+
+.locations-field {
+  width: 100%;
+  height: 485px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 10px 20px rgb(5, 5, 24);
+}
+
+.locations-field div {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(17, 17, 59);
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-family: Cambria;
+  line-height: 80px;
+  border-radius: 30px;
+}
+
+.locations-field div:hover {
+  background-color: rgb(24, 24, 82);
+}
+
+.artists {
+  width: 100%;
+  height: 800px;
+  color: black;
+  padding-top: 0.5em;
+  box-shadow: 0px -10px 20px rgb(5, 5, 24);
+  border: 2px solid red;
+}
+
+.artists-field {
+  width: inherit;
+  height: 650px;
+  border: 2px solid rgb(255, 136, 0);
+}

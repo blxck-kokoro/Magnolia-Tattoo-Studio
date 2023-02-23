@@ -1,1 +1,0 @@
-# Magnolia-tattoo-studio
