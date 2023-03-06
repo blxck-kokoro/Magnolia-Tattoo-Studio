@@ -62,12 +62,4 @@ for (let i = 0; i < navButtons.length; i++) {
 }
 
 moveToNextSlide(moveToSlide);
-setInterval(() => {
-    const currentSlide = track.querySelector('.current-slide');
-    let nextSlide = currentSlide.nextElementSibling;
-
-    if(!nextSlide) {
-        nextSlide = track.querySelectorAll('.slider-slide')[0];
-    }
-    moveToSlide(track, currentSlide, nextSlide);
-}, 5000);
+setInterval(() => moveToNextSlide(moveToSlide), 5000);
