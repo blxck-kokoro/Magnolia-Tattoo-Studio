@@ -267,13 +267,21 @@ hr {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   margin-bottom: 5rem;
+  height: 700px;
 }
 
 .artist-portrait {
-  height: 600px;
+  height: 90%;
   border-radius: 50%;
-  background-color: black;
-  margin-top: 5rem;
+  border: 3px solid black;
+  position: relative;
+  top: 26px;
+  box-shadow: 8px 8px 30px 20px rgba(0, 0, 0, 1);
+}
+
+.artist-description {
+  height: 100%;
+  text-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
 
 .artist-odd .artist-portrait {
