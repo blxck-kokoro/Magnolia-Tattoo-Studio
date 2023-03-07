@@ -48,6 +48,13 @@ nav .logo {
   color: white;
   font-family: "Segoe Script";
   font-size: 36px;
+  margin-right: 3rem;
+}
+
+@media (max-width: 1080px) {
+  nav .logo {
+    font-size: 18px;
+  }
 }
 
 nav .logo a {
@@ -67,6 +74,7 @@ nav ul {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav ul a {
@@ -80,6 +88,14 @@ nav ul a {
   align-items: center;
   text-decoration: none;
   border-radius: 10px;
+}
+
+@media (max-width: 1150px) {
+  nav ul a {
+    font-size: 15px;
+    width: 80px;
+    height: 30%;
+  } 
 }
 
 nav ul a:hover {
@@ -96,8 +112,14 @@ header {
 }
 
 hr {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  hr {
+    width: 50%;
+  }
 }
 
 fieldset {
@@ -166,9 +188,16 @@ footer div ul li:hover {
   opacity: 0.3;
 }
 
+.header-info-container {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header-info {
   color: white;
-  margin-top: 10%;
 }
 
 .slider-image {
@@ -216,6 +245,13 @@ footer div ul li:hover {
 .slider-btn * {
   width: 50px;
   height: 100px;
+}
+
+@media (max-width: 1150px) {
+  .slider-btn  * {
+    width: 25px;
+    height: 50px;
+  }
 }
 
 .left-btn {
