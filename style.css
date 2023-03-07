@@ -357,12 +357,15 @@ footer div ul li:hover {
 .artist-odd, .artist-even {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  margin-bottom: 5rem;
+  gap: 3rem;
+  margin-bottom: 1rem;
   height: 700px;
+  padding: 0 1rem;
 }
 
 .artist-portrait {
   height: 90%;
+  width: 100%;
   border-radius: 50%;
   border: 3px solid black;
   position: relative;
@@ -377,14 +380,14 @@ footer div ul li:hover {
 
 .artist-odd .artist-portrait {
   grid-column: 2 / 4;
-
 }
+
 .artist-odd .artist-description {
   grid-column:  5 / 7;
 }
 
 .artist-description p {
-  font-size: 32px;
+  font-size: 26px;
   text-align: justify;
 }
 
@@ -394,6 +397,44 @@ footer div ul li:hover {
 
 .artist-even .artist-portrait {
   grid-column: 5 / 7;
+}
+
+@media (max-width: 1150px) {
+  .artist-description p {
+    font-size: 20px;
+  }
+
+  .artist-portrait {
+    height: 75%;
+  }
+}
+
+@media (max-width: 900px) {
+  .artist-portrait {
+    height: 70%;
+  }
+
+  .artist-odd .artist-portrait {
+    grid-column: 1 / 5;
+  }
+
+  .artist-odd .artist-description {
+    grid-column: 5 / 8;
+  }
+
+  .artist-even .artist-portrait {
+    grid-column: 4 / 8;
+  }
+
+  .artist-even .artist-description {
+    grid-column: 1 / 4;
+  } 
+}
+
+@media (max-width: 500px) {
+  .artist-description p {
+    font-size: 15px;
+  }
 }
 
 .submit {
