@@ -51,12 +51,6 @@ nav .logo {
   margin-right: 3rem;
 }
 
-@media (max-width: 1080px) {
-  nav .logo {
-    font-size: 18px;
-  }
-}
-
 nav .logo a {
   color: inherit;
   text-decoration: inherit;
@@ -90,14 +84,6 @@ nav ul a {
   border-radius: 10px;
 }
 
-@media (max-width: 1150px) {
-  nav ul a {
-    font-size: 15px;
-    width: 80px;
-    height: 30%;
-  } 
-}
-
 nav ul a:hover {
   background-color: rgb(55, 55, 55);
 }
@@ -116,12 +102,6 @@ hr {
   margin: 0 auto;
 }
 
-@media (max-width: 500px) {
-  hr {
-    width: 50%;
-  }
-}
-
 fieldset {
   width: 50vw;
   margin: 0 auto;
@@ -129,13 +109,6 @@ fieldset {
   font-weight: bold;
   padding: 1rem;
   border-radius: 10px;  
-}
-
-@media (orientation: portrait) {
-  fieldset {
-    text-align: center;
-    width: 80vw;
-  }
 }
 
 input, textarea {
@@ -254,13 +227,6 @@ footer div ul li:hover {
   height: 100px;
 }
 
-@media (max-width: 1150px) {
-  .slider-btn  * {
-    width: 25px;
-    height: 50px;
-  }
-}
-
 .left-btn {
   left: 1rem;
 }
@@ -312,6 +278,7 @@ footer div ul li:hover {
   height: 400px;
   padding: 10px;
   text-align: justify;
+  gap: 5rem;
 }
 
 .about-us .about-us-section div p {
@@ -406,44 +373,6 @@ footer div ul li:hover {
   grid-column: 5 / 7;
 }
 
-@media (max-width: 1150px) {
-  .artist-description p {
-    font-size: 20px;
-  }
-
-  .artist-portrait {
-    height: 75%;
-  }
-}
-
-@media (max-width: 900px) {
-  .artist-portrait {
-    height: 70%;
-  }
-
-  .artist-odd .artist-portrait {
-    grid-column: 1 / 5;
-  }
-
-  .artist-odd .artist-description {
-    grid-column: 5 / 8;
-  }
-
-  .artist-even .artist-portrait {
-    grid-column: 4 / 8;
-  }
-
-  .artist-even .artist-description {
-    grid-column: 1 / 4;
-  } 
-}
-
-@media (max-width: 500px) {
-  .artist-description p {
-    font-size: 15px;
-  }
-}
-
 .submit {
   cursor: pointer;
   height: 50px;
@@ -477,4 +406,120 @@ footer div ul li:hover {
   align-items: center;
   font-family: sans-serif;
   border-top: 1px solid white;
+}
+
+@media (max-width: 1150px) {
+  nav .logo {
+    font-size: 18px;
+  }
+
+  nav ul a {
+    font-size: 15px;
+    width: 80px;
+    height: 30%;
+  } 
+
+  .slider-btn  * {
+    width: 25px;
+    height: 50px;
+  }
+
+  .artist-description p {
+    font-size: 20px;
+  }
+
+  .artist-portrait {
+    height: 75%;
+  }
+}
+
+@media (max-width: 900px) {
+  .artist-portrait {
+    height: 70%;
+  }
+
+  .artist-odd .artist-portrait {
+    grid-column: 1 / 5;
+  }
+
+  .artist-odd .artist-description {
+    grid-column: 5 / 8;
+  }
+
+  .artist-even .artist-portrait {
+    grid-column: 4 / 8;
+  }
+
+  .artist-even .artist-description {
+    grid-column: 1 / 4;
+  } 
+}
+
+@media (max-width: 500px) {
+  hr {
+    width: 50%;
+  }
+
+  .artist-description p {
+    font-size: 15px;
+  }
+}
+
+@media (orientation: portrait) {
+  fieldset {
+    text-align: center;
+    width: 80vw;
+  }
+
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    height: 60vh;
+    padding: 0 10px;
+  }
+
+  footer div {
+    grid-row: 2 / 3;
+    text-align: center;
+  }
+
+  footer div ul {
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .footer-first-col {
+    grid-column: 1;
+  }
+
+  .footer-second-col {
+    grid-column: 2;
+  }
+
+  .footer-third-col {
+    grid-column: 3;
+  }
+
+  .footer-copyrights {
+    grid-column: 1 / 4; 
+    border-top: none;
+    position: relative;
+    top: 10%
+  }
+
+
+  .footer-copyrights:after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 30%;
+    border-top: 1px solid white;
+    }
 }
