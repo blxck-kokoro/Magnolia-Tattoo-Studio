@@ -5,7 +5,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: "Georgia", "Times New Roman", Times, serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 body * {
@@ -15,7 +15,6 @@ body * {
 h1 {
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
-  font-weight: bold;
   text-align: center;
 }
 
@@ -28,7 +27,7 @@ h2 {
 nav {
   position: fixed;
   top: 0;
-  height: 100px;
+  height: 15vh;
   width: 100%;
   background-color: rgb(5, 5, 24);
   box-shadow: 0px 0px 20px 30px rgba(5, 5, 30, 1);
@@ -40,14 +39,13 @@ nav {
 }
 
 nav .logo {
-  height: 80px;
   width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-family: "Segoe Script";
-  font-size: 36px;
+  font-size: 2rem;
   margin-right: 3rem;
 }
 
@@ -106,7 +104,6 @@ fieldset {
   width: 50vw;
   margin: 0 auto;
   text-align: left;
-  font-weight: bold;
   padding: 1rem;
   border-radius: 10px;  
 }
@@ -333,12 +330,11 @@ footer div ul li:hover {
   grid-template-columns: repeat(7, 1fr);
   gap: 3rem;
   margin-bottom: 1rem;
-  height: 700px;
+  height: 50rem;
   padding: 0 1rem;
 }
 
 .artist-portrait {
-  height: 90%;
   width: 100%;
   border-radius: 50%;
   border: 3px solid black;
@@ -348,7 +344,6 @@ footer div ul li:hover {
 }
 
 .artist-description {
-  height: 100%;
   text-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
 
@@ -410,7 +405,7 @@ footer div ul li:hover {
 
 @media (max-width: 1150px) {
   nav .logo {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
 
   nav ul a {
@@ -456,12 +451,31 @@ footer div ul li:hover {
 }
 
 @media (max-width: 500px) {
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  .artist-odd, .artist-even {
+    height: 20rem;
+    margin-bottom: 9rem;
+  }
+
+  .artist-portrait {
+    height: 100%;
+    top: 0;
+  }
+
   hr {
     width: 50%;
   }
 
+  .artist-description {
+    overflow: scroll;
+  }
+
   .artist-description p {
-    font-size: 15px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-size: 0.8rem;
   }
 }
 
@@ -522,4 +536,10 @@ footer div ul li:hover {
     top: 30%;
     border-top: 1px solid white;
     }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+  nav {
+    height: 25vh;
+  }
 }
