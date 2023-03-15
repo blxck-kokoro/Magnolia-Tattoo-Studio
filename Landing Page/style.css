@@ -24,6 +24,11 @@ h2 {
   text-align: center;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -47,11 +52,6 @@ nav .logo {
   font-family: "Segoe Script";
   font-size: 2rem;
   margin-right: 3rem;
-}
-
-nav .logo a {
-  color: inherit;
-  text-decoration: inherit;
 }
 
 nav .logo a:hover {
@@ -78,7 +78,6 @@ nav ul a {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
   border-radius: 10px;
 }
 
@@ -336,11 +335,46 @@ footer div ul li:hover {
 
 .artist-portrait {
   width: 100%;
+  height: 70%;
   border-radius: 50%;
-  border: 3px solid black;
+  border: 3px solid red;
   position: relative;
   top: 26px;
   box-shadow: 8px 8px 30px 20px rgba(5, 5, 30, 1);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.artist1-portrait {
+  background-image: url(images/artist1.jpg);
+}
+
+.artist2-portrait {
+  background-image: url(images/artist2.jpg);
+}
+
+.artist3-portrait {
+  background-image: url(images/artist3.jpg);
+}
+
+.artist-portrait-content {
+  opacity: 0;
+}
+
+.artist-portrait hr {
+  width: 50%;
+}
+
+.artist-portrait img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid fuchsia;
+  opacity: 0.5;
 }
 
 .artist-description {
