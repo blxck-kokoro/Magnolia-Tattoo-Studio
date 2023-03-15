@@ -130,6 +130,7 @@ h2 {
 
     .work-container {
         width: 100vw;
+        column-count: 2;
     }
 
     nav .logo {
