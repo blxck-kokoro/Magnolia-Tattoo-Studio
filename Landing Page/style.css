@@ -393,6 +393,11 @@ footer div ul li:hover {
   text-align: justify;
 }
 
+.artist-description p span {
+  font-style: italic;
+  font-size: 0.75em;
+}
+
 .artist-even .artist-description {
   grid-column: 2 / 4;
 } 
