@@ -17,6 +17,7 @@ nav {
     padding-top: 1rem;
     color: white;
     background-color: rgb(5, 5, 24);
+    z-index: 1;
   }
 
 nav img {
@@ -96,11 +97,52 @@ h2 {
     width: 100%;
     margin-bottom: 1rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .work-container img:hover {
     transition: 0.25s;
     transform: translateY(-1rem);
+}
+
+.work-container .view-mode {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 90vh;   
+    max-width: 70vw;
+}
+
+.filter {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    width: auto;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.view-filter img {
+    background-color: white;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+    cursor: pointer;
+    display: none;
 }
 
 @media (max-width: 1080px) {
@@ -135,5 +177,16 @@ h2 {
 
     nav .logo {
         margin-top: 3rem;
+    }
+
+    .view-filter img {
+        height: 3rem;
+        width: 3rem;
+        right: 1rem;
+    }
+
+    .work-container .view-mode {
+        max-height: 95vh;   
+        max-width: 90vw;
     }
 }
