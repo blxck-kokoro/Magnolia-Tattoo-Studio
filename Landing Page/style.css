@@ -510,6 +510,14 @@ footer div ul li:hover {
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     font-size: 0.8rem;
   }
+
+  .artist-portrait-content h1 {
+    font-size: 2rem;
+  }
+
+  .artist-portrait-content h2 {
+    font-size: 1rem;
+  }
 }
 
 @media (orientation: portrait) {
